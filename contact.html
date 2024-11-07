@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://use.fontawesome.com/dfba0bb4d8.js"></script>
+</head>
+<body>
+    
+    <section id="header">
+        <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <a href="#" id="close"><i class='fa fa-close'></i></a>
+                <li><a  href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="login.html" target="_blank">Login</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+                <li id="lg-bag">
+                    <a href="cart.html" target="_blank" onclick="showCart()">
+                        <i class="fa fa-shopping-bag" aria-hidden="true"></i>Cart (<span id="cart-count">0</span>)
+                    </a>
+                    &nbsp;
+                    <a href="#" onclick="resetCart()">
+                        <i class="fa fa-refresh" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+      
+    </section>
+
+    <section id="page-header" class="about-header">
+        <h2>Contact Us</h2>
+        <p> Leave a message. We would love to hear from you....</p>
+        <a href="#" class="to-top">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+    </section>
+
+    <section id="contact-details" class="section-p1">
+        <div class="details">
+            
+            <h2>Visit us or Contact us</h2>
+            <br>
+            <h3>Head Office</h3>
+            <div>
+                <li>
+                    <i class="fa fa-map" aria-hidden="true"></i>
+                    <p>Address Lorem ipsum dolor sit</p>
+                </li>
+                <li>
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    <p>Contact@example.com</p>
+                </li>
+                <li>
+                    <i class="fa fa-phone" aria-hidden="true"></i>>
+                    <p>Phone Number</p>
+                </li>
+                <li>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    <p>Office Timing</p>
+                </li>
+            </div>
+      
+        
+    </section>
+ 
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign up for Newsletters</h4>
+            <p>Stay updated with our latest news and promotions.<span>  &nbsp;&nbsp;Subscribe!</span></p>
+        </div>
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                       
+                        <p><i class="fa-regular fa-paper-plane"></i>bhuwanchhabra754@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>7015222785</p>
+                        <div class="social-icons">
+                            <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="https://www.linkedin.com/feed/"target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            
+                    
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn">Submit</button>
+                        </form>
+                       
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+    </section>
+   <footer class="section-p1">
+    <div class="col">
+        <img class="logo" src="img/logo.png" alt="">
+        <h4>Contact</h4>
+        <p><strong>Address :</strong> Lorem ipsum dolor sit</p>
+        <p><strong>Phone :</strong> 13569876540</p>
+        <p><strong>Hours :</strong> 5hoai</p>
+        <div class="follow">
+            <h4>Follow Us</h4>
+            <div class="icon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest-p"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <h4>About</h4>
+        <a href="#">About US</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact Us</a>
+        <a href="#">About US</a>
+    </div>
+
+    <div class="col">
+        <h4>MY Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+    </div>
+
+
+    <div class="col install">
+        <h4>Install App</h4>
+        <p>From app store or Google PLay Store</p>
+        <div class="row">
+            <img src="img/pay/app.jpg" alt="">
+            <img src="img/pay/play.jpg" alt="">
+        </div>
+        <p>Secured payment Gateways</p>
+        <img src="img/pay/pay.png" alt="">
+    </div>
+
+    <div class="copyright">
+        <p>c 2022, With ❤ Bhandary ,  Ecommerce Website Template</p>
+    </div>
+
+   </footer>
+
+   <script>
+    
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwO5hGw3gQKp9kXQdtH0UKsMc9Ldf0ZMw4PUQLluNMMvea-jAIn82e6JKiC6t0jmMVGQQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message Sent succesfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  
+</script> 
+</body>
+</html>
+
+<!-- https://docs.google.com/spreadsheets/d/1GksA4Hb6hG-6xT5dFuSSDDjNJ4esDe4A6GDhRIXTVMs/edit?gid=0#gid=0 -->

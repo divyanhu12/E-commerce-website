@@ -1,0 +1,597 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://use.fontawesome.com/dfba0bb4d8.js"></script>
+</head>
+<body>
+    
+    <section id="header">
+   
+
+        <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <a href="#" id="close"><i class='fa fa-close'></i></a>
+                <img src="https://5.imimg.com/data5/VL/DG/MY-11201380/ecommerce-sites-250x250.png">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html" target="_blank">Login</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag">
+                    <a href="cart.html" target="_blank" onclick="showCart()">
+                        <i class="fa fa-shopping-bag" aria-hidden="true"></i>Cart (<span id="cart-count">0</span>)
+                    </a>
+                    &nbsp;
+                    <a href="#" onclick="resetCart()">
+                        <i class="fa fa-refresh" aria-hidden="true"></i>
+                    </a>
+                </li>
+              
+            </ul>
+        </div>
+        
+        
+        <div id="mobile">
+            <a href="#" onclick="showCart()"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
+            <i id="bar" class="fa fa-bars" aria-hidden="true"></i>      
+        </div>
+    </section>
+
+    <section id="hero">
+        <h4>Trade in Offer</h4>
+        <h2>Super Value Deals</h2>
+        <h1>On all products</h1>
+        <p>Lorem ipsum dolor</p>
+        <button>Shop Now</button>
+        <img src="https://i.ytimg.com/vi/II0cF9hFQ_g/maxresdefault.jpg">
+        <a href="#" class="to-top">
+            <p class="to-top--title">BACK <br> TO TOP</p>
+        </a>
+    </section>
+
+    <section id="feature" class="section-p1">
+        <div class="fe-box">
+            <img src="img/features/f1.png" alt="">
+            <h6>Lorem, ipsum.</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/features/f2.png" alt="">
+            <h6>Lorem, ipsum.</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/features/f3.png" alt="">
+            <h6>Lorem, ipsum.</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/features/f4.png" alt="">
+            <h6>Lorem, ipsum.</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/features/f5.png" alt="">
+            <h6>Lorem, ipsum.</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/features/f6.png" alt="">
+            <h6>Lorem, ipsum.</h6>
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2>Featured Products</h2>
+        <p>Summer Collection</p>
+        <div class="pro-container">
+            <div class="pro" data-id="2" data-name="Cotton pant" data-price="27">
+                <img src="img/products/f1.jpg" alt="">
+                <div class="des">
+                    <span>Adiddas</span>
+                    <h5>Cotton pant</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$27</h4>
+                </div>
+                
+                <button onclick="addToCart(this)" class="add-to-cart-btn">
+                    <i class="fa-sharp fa-solid fa-cart-shopping"></i> Add to Cart
+                </button>
+            </div>
+            <div class="pro" data-id="3" data-name="Cotton shirts" data-price="70">
+                <img src="img/products/f2.jpg" alt="">
+                <div class="des">
+                    <span>Adidas</span>
+                    <h5>Cotton shirts pure cotton</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <button onclick="addToCart(this)" class="add-to-cart-btn">
+                    <i class="fa-sharp fa-solid fa-cart-shopping"></i> Add to Cart
+                </button>
+            </div>  
+            
+            
+            
+            <div class="pro" data-id="4" data-name="Cotton shoes" data-price="978">
+                <img src="img/products/f3.jpg" alt="">
+                <div class="des">
+                    <span>Adiddas</span>
+                    <h5>Cotton shirts pure cotton</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <button onclick="addToCart(this)" class="add-to-cart-btn">
+                    <i class="fa-sharp fa-solid fa-cart-shopping"></i> Add to Cart
+                </button>
+            </div>
+            <div class="pro" data-id="5" data-name="Cotton shirts pure cotton" data-price="78">
+                <img src="img/products/f4.jpg" alt="">
+                <div class="des">
+                    <span>Adiddas</span>
+                    <h5>Cotton shirts pure cotton</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <button onclick="addToCart(this)" class="add-to-cart-btn">
+                    <i class="fa-sharp fa-solid fa-cart-shopping"></i> Add to Cart
+                </button>
+            </div>
+            <div class="pro" data-id="6" data-name="Cotton" data-price="78">
+                <img src="img/products/f5.jpg" alt="">
+                <div class="des">
+                    <span>Adiddas</span>
+                    <h5>Cotton shirts pure cotton</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <button onclick="addToCart(this)" class="add-to-cart-btn">
+                    <i class="fa-sharp fa-solid fa-cart-shopping"></i> Add to Cart
+                </button>
+            </div>
+            <div class="pro" data-id="7" data-name="Cotton shirts pure cotton" data-price="78">
+                <img src="img/products/f6.jpg" alt="">
+                <div class="des">
+                    <span>Adiddas</span>
+                    <h5>Cotton shirts pure cotton</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <button onclick="addToCart(this)" class="add-to-cart-btn">
+                    <i class="fa-sharp fa-solid fa-cart-shopping"></i> Add to Cart
+                </button>
+            </div>
+            <div class="pro" data-id="8" data-name="Cotton shirts pure cotton" data-price="78">
+                <img src="img/products/f7.jpg" alt="">
+                <div class="des">
+                    <span>Adiddas</span>
+                    <h5>Cotton shirts pure cotton</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <button onclick="addToCart(this)" class="add-to-cart-btn">
+                    <i class="fa-sharp fa-solid fa-cart-shopping"></i> Add to Cart
+                </button>
+            </div>
+            <div class="pro" data-id="9" data-name="Cotton shirts pure cotton" data-price="78">
+                <img src="img/products/f8.jpg" alt="">
+                <div class="des">
+                    <span>Adiddas</span>
+                    <h5>Cotton shirts pure cotton</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <button onclick="addToCart(this)" class="add-to-cart-btn">
+                    <i class="fa-sharp fa-solid fa-cart-shopping"></i> Add to Cart
+                </button>
+            </div>
+            
+        </div>
+
+    </section>
+
+    <section id="banner" class="section-m1">
+        <h4>Repair Services</h4>
+        <h2>Upto <span>70% Off</span>- All T-shirts & Accessories</h2>
+        <button class="normal">Explore More</button>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2>New Arrivals</h2>
+        <p>Summer Collection</p>
+        <div class="pro-container">
+            <div class="pro" data-id="10" data-name="Cotton shirts pure cotton" data-price="78">
+                <img src="img/products/n1.jpg" alt="">
+                <div class="des">
+                    <span>Adiddas</span>
+                    <h5>Cotton shirts pure cotton</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <button onclick="addToCart(this)" class="add-to-cart-btn">
+                    <i class="fa-sharp fa-solid fa-cart-shopping"></i> Add to Cart
+                </button>
+            </div>
+            <div class="pro" data-id="11" data-name="Cotton shirts pure cotton" data-price="78">
+                <img src="img/products/n2.jpg" alt="">
+                <div class="des">
+                    <span>Adiddas</span>
+                    <h5>Cotton shirts pure cotton</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <button onclick="addToCart(this)" class="add-to-cart-btn">
+                    <i class="fa-sharp fa-solid fa-cart-shopping"></i> Add to Cart
+                </button>
+            </div>
+            <div class="pro" data-id="12" data-name="Cotton shirts pure cotton" data-price="78">
+                <img src="img/products/n3.jpg" alt="">
+                <div class="des">
+                    <span>Adiddas</span>
+                    <h5>Cotton shirts pure cotton</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <button onclick="addToCart(this)" class="add-to-cart-btn">
+                    <i class="fa-sharp fa-solid fa-cart-shopping"></i> Add to Cart
+                </button>
+            </div>
+            <div class="pro" data-id="13" data-name="Cotton shirts pure cotton" data-price="78">
+                <img src="img/products/n4.jpg" alt="">
+                <div class="des">
+                    <span>Adiddas</span>
+                    <h5>Cotton shirts pure cotton</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <button onclick="addToCart(this)" class="add-to-cart-btn">
+                    <i class="fa-sharp fa-solid fa-cart-shopping"></i> Add to Cart
+                </button>
+            </div>
+            <div class="pro" data-id="14" data-name="Cotton shirts pure cotton" data-price="78">
+                <img src="img/products/n5.jpg" alt="">
+                <div class="des">
+                    <span>Adiddas</span>
+                    <h5>Cotton shirts pure cotton</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <button onclick="addToCart(this)" class="add-to-cart-btn">
+                    <i class="fa-sharp fa-solid fa-cart-shopping"></i> Add to Cart
+                </button>
+            </div>
+            <div class="pro" data-id="15" data-name="Cotton shirts pure cotton" data-price="78">
+                <img src="img/products/n6.jpg" alt="">
+                <div class="des">
+                    <span>Adiddas</span>
+                    <h5>Cotton shirts pure cotton</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <button onclick="addToCart(this)" class="add-to-cart-btn">
+                    <i class="fa-sharp fa-solid fa-cart-shopping"></i> Add to Cart
+                </button>
+            </div>
+            <div class="pro" data-id="16" data-name="Cotton shirts pure cotton" data-price="78">
+                <img src="img/products/n7.jpg" alt="">
+                <div class="des">
+                    <span>Adiddas</span>
+                    <h5>Cotton shirts pure cotton</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <button onclick="addToCart(this)" class="add-to-cart-btn">
+                    <i class="fa-sharp fa-solid fa-cart-shopping"></i> Add to Cart
+                </button>
+            </div>
+            <div class="pro" data-id="17" data-name="Cotton shirts pure cotton" data-price="78">
+                <img src="img/products/n8.jpg" alt="">
+                <div class="des">
+                    <span>Adiddas</span>
+                    <h5>Cotton shirts pure cotton</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <button onclick="addToCart(this)" class="add-to-cart-btn">
+                    <i class="fa-sharp fa-solid fa-cart-shopping"></i> Add to Cart
+                </button>
+            </div>
+            
+        </div>
+
+    </section>
+
+    <section id="sm-banner" class="section-p1">
+        <div class="banner-box ">
+            <h4>Crazy Deals</h4>
+            <h2>buy 1 get 1 free</h2>
+            <span>Lorem ipsum dolor sit amet consectetur.</span>
+            <button class="white">Learn more</button>
+        </div>
+
+        <div class="banner-box banner-box2">
+            <h4>Spring Summer</h4>
+            <h2>buy 1 get 1 free</h2>
+            <span>Lorem ipsum asdasdasdasd.</span>
+            <button class="white">Learn more</button>
+        </div>
+        
+       
+    </section>
+
+    <section id="banner3">
+        <div class="banner-box">
+            <h2>SEASONAL SALE</h2>
+            <h3>Winter Collection</h3>
+        </div>
+        <div class="banner-box banner-box2">
+            <h2>SEASONAL</h2>
+            <h3>Winter Collection</h3>
+        </div>
+        <div class="banner-box banner-box3">
+            <h2> SALE</h2>
+            <h3>Winter Collection</h3>
+        </div>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign up for Newsletters</h4>
+            <p>Stay updated with our latest news and promotions.<span>  &nbsp;&nbsp;Subscribe!</span></p>
+        </div>
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                       
+                        <p><i class="fa-regular fa-paper-plane"></i>bhuwanchhabra754@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>7015222785</p>
+                        <div class="social-icons">
+                            <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="https://www.linkedin.com/feed/"target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            
+                    
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn">Submit</button>
+                        </form>
+                       
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+    </section>
+    </section>
+
+   <footer class="section-p1">
+    <div class="col">
+        <img class="logo" src="img/logo.png" alt="">
+        <h4>Contact</h4>
+        <p><strong>Address :</strong> Lorem ipsum dolor sit</p>
+        <p><strong>Phone :</strong> 13569876540</p>
+        <p><strong>Hours :</strong> 5hoai</p>
+        <div class="follow">
+            <h4>Follow Us</h4>
+            <div class="icon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest-p"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <h4>About</h4>
+        <a href="#">About US</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact Us</a>
+        <a href="#">About US</a>
+    </div>
+
+    <div class="col">
+        <h4>MY Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+    </div>
+
+
+    <div class="col install">
+        <h4>Install App</h4>
+        <p>From app store or Google PLay Store</p>
+        <div class="row">
+            <img src="img/pay/app.jpg" alt="">
+            <img src="img/pay/play.jpg" alt="">
+        </div>
+        <p>Secured payment Gateways</p>
+        <img src="img/pay/pay.png" alt="">
+    </div>
+
+    <div class="copyright">
+        <p>c 2022, With ❤ Bhandary ,  Ecommerce Website Template</p>
+    </div>
+
+   </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Initialize cart
+        // Initialize cart
+let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+// Update cart count
+function updateCartCount() {
+    const totalQuantity = cart.reduce((sum, item) => sum + (item.quantity || 1), 0); // Default to 1 if quantity is undefined
+    document.getElementById('cart-count').textContent = totalQuantity;
+}
+
+// Add product to cart
+function addToCart(button) {
+    const productDiv = button.parentElement;
+    const productId = productDiv.getAttribute('data-id');
+    const productName = productDiv.getAttribute('data-name');
+    const productPrice = productDiv.getAttribute('data-price');
+    
+    const product = { id: productId, name: productName, price: productPrice, quantity: 1 };
+
+    // Check if product is already in cart
+    const existingProductIndex = cart.findIndex(item => item.id === productId);
+    if (existingProductIndex >= 0) {
+        // If the product already exists, increment the quantity
+        cart[existingProductIndex].quantity += 1;
+    } else {
+        // Add new product to cart
+        cart.push(product);
+    }
+    
+    localStorage.setItem('cart', JSON.stringify(cart));
+    updateCartCount();
+    alert(`${productName} has been added to your cart.`);
+}
+
+// Show cart items
+function showCart() {
+    if (cart.length === 0) {
+        alert('Your cart is empty.');
+        return;
+    }
+
+    let cartContent = "Your Cart:\n";
+    cart.forEach((item, index) => {
+        cartContent += `${index + 1}. ${item.name} - $${item.price} (Quantity: ${item.quantity})\n`;
+    });
+
+    alert(cartContent);
+}
+// Reset cart
+function resetCart() {
+    cart = []; // Clear the cart array
+    localStorage.removeItem('cart'); // Remove cart from local storage
+    updateCartCount(); // Update cart count display
+    alert('Your cart has been reset.');
+}
+
+
+// Initial cart count on page load
+updateCartCount();
+
+
+    </script>
+    
+
+    
+</body>
+</html>
+
+<!-- https://docs.google.com/spreadsheets/d/1C_Y7lptKdaqQA4QBgVDpL_1l9dFtwWsxCDhg_xeRhCg/edit?gid=0#gid=0 -->
